@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NEUStockApp.xcodeproj">
+      location = "group:/Users/zhangxinyi/Documents/NEU/INFO6350/ClassExample/NEUStockApp/NEUStockApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

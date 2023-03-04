@@ -14,6 +14,11 @@
 		4253F2FC29984AD4005005AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4253F2FB29984AD4005005AA /* Assets.xcassets */; };
 		4253F2FF29984AD4005005AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4253F2FD29984AD4005005AA /* LaunchScreen.storyboard */; };
 		4253F30829984C95005005AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253F30729984C95005005AA /* Constants.swift */; };
+		42D7A1C329B1B39300852D29 /* StockPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7A1C229B1B39300852D29 /* StockPrice.swift */; };
+		42D7A1C829B1C85F00852D29 /* StockTableViewControllerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7A1C729B1C85F00852D29 /* StockTableViewControllerCode.swift */; };
+		42D7A1CA29B1C9A000852D29 /* StockRealmFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7A1C929B1C9A000852D29 /* StockRealmFunctions.swift */; };
+		42D7A1CC29B1CBA700852D29 /* StockNetworkingCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7A1CB29B1CBA700852D29 /* StockNetworkingCode.swift */; };
+		42D7A1CE29B313E400852D29 /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7A1CD29B313E400852D29 /* StockDetailsViewController.swift */; };
 		848EC4E5B3A5252E21334CED /* Pods_NEUStockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693064D6DD642BFC7A62CE7C /* Pods_NEUStockApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		4253F2FE29984AD4005005AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4253F30029984AD4005005AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4253F30729984C95005005AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42D7A1C229B1B39300852D29 /* StockPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPrice.swift; sourceTree = "<group>"; };
+		42D7A1C729B1C85F00852D29 /* StockTableViewControllerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewControllerCode.swift; sourceTree = "<group>"; };
+		42D7A1C929B1C9A000852D29 /* StockRealmFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRealmFunctions.swift; sourceTree = "<group>"; };
+		42D7A1CB29B1CBA700852D29 /* StockNetworkingCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNetworkingCode.swift; sourceTree = "<group>"; };
+		42D7A1CD29B313E400852D29 /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
 		617087CEC1FD66FCDFA7CABB /* Pods-NEUStockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUStockApp.release.xcconfig"; path = "Target Support Files/Pods-NEUStockApp/Pods-NEUStockApp.release.xcconfig"; sourceTree = "<group>"; };
 		693064D6DD642BFC7A62CE7C /* Pods_NEUStockApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEUStockApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D3DE78843E2A451E2506D8 /* Pods-NEUStockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEUStockApp.debug.xcconfig"; path = "Target Support Files/Pods-NEUStockApp/Pods-NEUStockApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,11 +75,12 @@
 		4253F2F129984AD3005005AA /* NEUStockApp */ = {
 			isa = PBXGroup;
 			children = (
+				42D7A1C629B1C7C600852D29 /* Controller */,
+				42D7A1C529B1C7C100852D29 /* View */,
+				42D7A1C429B1C7B900852D29 /* Model */,
 				4253F30629984C75005005AA /* utils */,
 				4253F2F229984AD3005005AA /* AppDelegate.swift */,
 				4253F2F429984AD3005005AA /* SceneDelegate.swift */,
-				4253F2F629984AD3005005AA /* ViewController.swift */,
-				4253F2F829984AD3005005AA /* Main.storyboard */,
 				4253F2FB29984AD4005005AA /* Assets.xcassets */,
 				4253F2FD29984AD4005005AA /* LaunchScreen.storyboard */,
 				4253F30029984AD4005005AA /* Info.plist */,
@@ -83,6 +94,34 @@
 				4253F30729984C95005005AA /* Constants.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		42D7A1C429B1C7B900852D29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42D7A1C229B1B39300852D29 /* StockPrice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42D7A1C529B1C7C100852D29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4253F2F829984AD3005005AA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42D7A1C629B1C7C600852D29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4253F2F629984AD3005005AA /* ViewController.swift */,
+				42D7A1C729B1C85F00852D29 /* StockTableViewControllerCode.swift */,
+				42D7A1C929B1C9A000852D29 /* StockRealmFunctions.swift */,
+				42D7A1CB29B1CBA700852D29 /* StockNetworkingCode.swift */,
+				42D7A1CD29B313E400852D29 /* StockDetailsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AE7DB6F962AC28D2B27838CB /* Pods */ = {
@@ -218,7 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4253F2F729984AD3005005AA /* ViewController.swift in Sources */,
+				42D7A1C829B1C85F00852D29 /* StockTableViewControllerCode.swift in Sources */,
+				42D7A1CA29B1C9A000852D29 /* StockRealmFunctions.swift in Sources */,
+				42D7A1CC29B1CBA700852D29 /* StockNetworkingCode.swift in Sources */,
 				4253F2F329984AD3005005AA /* AppDelegate.swift in Sources */,
+				42D7A1C329B1B39300852D29 /* StockPrice.swift in Sources */,
+				42D7A1CE29B313E400852D29 /* StockDetailsViewController.swift in Sources */,
 				4253F2F529984AD3005005AA /* SceneDelegate.swift in Sources */,
 				4253F30829984C95005005AA /* Constants.swift in Sources */,
 			);
@@ -371,8 +415,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NEUStockApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,8 +445,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NEUStockApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
